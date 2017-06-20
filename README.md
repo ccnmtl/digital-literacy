@@ -1,9 +1,9 @@
-**Synopsis: What does the project do? **
+**Synopsis**
 ----------------------------------------
 
 The Digital Literacy Competency Calculator (DLCC) is a web-based tool to represent the connection between digital literacy competencies and the teaching and learning practices that produce them. Representations produced with this tool allow learners to see exactly what is involved in mastering a digital skill, how a specific learning experience contributes to their mastery, and what they will be able to do to show mastery.
 
-**Motivation: Why is this project useful?**
+**Motivation**
 -------------------------------------------
 
 The Digital Literacy Competency Calculator is part of the [*Digital Literacy for Instructional Practices Program*](http://ctl.columbia.edu/programs/seminars/digital-literacy-instructional-practices/) at the Columbia University Center for Teaching and Learning and Columbia University Libraries. Please see our [*DLCC White Paper*](https://docs.google.com/document/d/11Em2vX-jJw_4QoP62STwVo1i5cNi81ARft9j7gOQsoA/edit?usp=sharing) for background on this project.
@@ -38,7 +38,7 @@ We encourage instructors to customize these representations based on
 their instructional plan and the actual skills being covered in their
 course or bootcamp.
 
-**Installation: How can users can get started with this project?**
+**Installation**
 ------------------------------------------------------------------
 
 1.  Choose the the framework that is most appropriate for your instructional context. Please see Choosing Your Framework in our[*Digital Literacy Instructional Design Process*](https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit?usp=sharing).
@@ -53,19 +53,19 @@ course or bootcamp.
 
 3.  Make a copy of the Google Sheets DLCC template for the framework you selected:
 
-[Screenshot of menu for copying a Google Sheet](images/Make_A_Copy_Google_Sheet.png){width="4.291666666666667in" height="2.410936132983377in"}
+![Screenshot of menu for copying a Google Sheet](images/Make_A_Copy_Google_Sheet.png)
 
 4.  Customize the spreadsheet to match your instructional design. Please see our [*Digital Literacy Instructional Design Process*](https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit?usp=sharing).
 
-5.  When you are happy with the spreadsheet, download it as a Comma-Separated Values and name the file “standards**”**.
+5.  When you are happy with the spreadsheet, download it as a Comma-Separated Values and name the file “**standards**”.
 
-[Screenshot of menu to download Google Sheet as .csv](images/Download_As_CSV_Google_Sheet.png){width="4.243463473315836in" height="3.6114577865266844in"}
+![Screenshot of menu to download Google Sheet as .csv](images/Download_As_CSV_Google_Sheet.png)
 
 6.  Go to the “csv” folder inside the “images” folder in your repository. Drag the file “standards.csv” into the “csv” folder. It should replace the existing “standards.csv” file.
 
 7.  Describe your change and create a new branch for this commit and start a pull request. ([**What is a pull request?**](https://help.github.com/articles/about-pull-requests/))
 
-[Screenshot of proposing a change in GitHub](images/Propose_Changes_GitHub.png){width="5.5in" height="2.1122451881014874in"}
+![Screenshot of proposing a change in GitHub](images/Propose_Changes_GitHub.png)
 
 8.  Go to the “index.html” file in your repository and edit the Title (line 203) and descriptions (line 206) to suit your context. Describe your change and create a new branch for this commit and start a pull request.
 
@@ -73,13 +73,14 @@ course or bootcamp.
 
 9.  Review your changes to “standards.csv” and “index.html” and merge your pull requests with the master branch. (**[How do I merge a pull request?](https://help.github.com/articles/merging-a-pull-request/))**
 
-[Screenshot of merging a pull request in GitHub](images/Merge_Pull_Request_GitHub.png){width="5.447916666666667in" height="1.4388856080489938in"}
+![Screenshot of merging a pull request in GitHub](images/Merge_Pull_Request_GitHub.png)
 
 10.  Share the link for your representation!
 
-[Screenshot of link location in GitHub](images/Share_Link_GitHub.png){width="5.511908355205599in" height="1.0031255468066491in"}
+![Screenshot of link location in GitHub](images/Share_Link_GitHub.png)
 
 **Creating Your Own Digital Literacy Competency Calculator Repository on GitHub**
+------------------------------------------------------------------
 
 GitHub’s documentation is available [*here*](https://help.github.com/).
 
@@ -99,11 +100,11 @@ GitHub’s documentation is available [*here*](https://help.github.com/).
 
     b.  Scroll down to GitHub Pages. Under Source, select “master branch”. Click Save. Your site with your Digital Literacy Competency Calculator is now published
 
-[Screenshot of publishing a site on GitHub](images/Publish_Site_GitHub.png){width="5.465625546806649in" height="1.9762707786526683in"}
+![Screenshot of publishing a site on GitHub](images/Publish_Site_GitHub.png)
 
 4.  Copy the link to your site into the description of your repository for easy reference.
 
-[Screenshot of link location in GitHub](images/Share_Link_GitHub.png){width="5.511908355205599in" height="1.0031255468066491in"}
+![Screenshot of link location in GitHub](images/Share_Link_GitHub.png)
 
 5.  Edit the repository content.
 
@@ -117,13 +118,9 @@ GitHub’s documentation is available [*here*](https://help.github.com/).
 The Digital Literacy Competency Calculator is part of the [*Digital Literacy for Instructional Practices Program*](http://ctl.columbia.edu/programs/seminars/digital-literacy-instructional-practices/) at the Columbia University Center for Teaching and Learning and Columbia University Libraries. Contributors to this project are:
 
 -   Lucy Appert
-
 -   Jessica Brodsky
-
 -   Susan Dreher
-
 -   Amy Nurnberger
-
 -   Marc Raymond
 
 Please contact Lucy Appert([*lucy.appert@columbia.edu*](mailto:lucy.appert@columbia.edu)) for assistance.
