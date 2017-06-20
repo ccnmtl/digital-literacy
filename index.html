@@ -1,185 +1,294 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
+	<head>
 <!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <!--Custom CSS -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="css/worth-custom.css">
-	<title>The Digital Literacy Competency Calculator (DLCC)</title>
-	<style>
-	body {font-family: 'Open Sans', sans-serif;}
-		section, footer {padding: 3em 0em 3em 0em;}
-		.bronze { background-color: #b87333; color: #fc6;}
-		.silver { background-color: #c3cbd0; color: #444;}
-		.gold { background-color: #c5b358; color: white;}	
-	</style> 
-</head>
-
-<body>
-<a name="top"></a>
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse"> 
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
-<span class="navbar-toggler-icon"></span> 
-</button> 
-<a class="navbar-brand" href="#top">The Digital Literacy Competency Calculator</a> 
-<div class="collapse navbar-collapse" id="navbarNav">
-	<ul class="navbar-nav">
-		<li class="nav-item"> <a class="nav-link" href="#about">About the DLCC</a></li>
-		<li class="nav-item"> <a class="nav-link" href="#teach">Teaching with the DLCC</a></li>
-		<li class="nav-item"> <a class="nav-link" href="#use">The DLCC in Action</a></li>
-		<li class="nav-item"> <a class="nav-link" href="#contact">Contact Us</a></li>
-	</ul>
-</div>
-</nav> 
-<section class="text-center gold"> 
-<div class="container">
-	<p class="display-2">
-		The Digital Literacy<br />Competency Calculator 
-	</p>
-	<p class="lead">
-		Making competency mastery transparent for ourselves and our students. 
-	</p>
-	<p>
-	<strong><a href="https://github.com/ccnmtl/digital-literacy/blob/master/README.md" class="btn btn-lg btn-secondary">Launch GitHub</a></strong> 
-	</p>
-</div>
-</section> 
-<a name="about"></a>
-<section class="text-center"> 
-<div class="container">
-	<h2 class="display-4">
-		About the DLCC 
-	</h2>
-	<p class="lead">
-		Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely. 
-	</p>
-	<div class="row">
-		<div class="col-lg-4 text-left">
-			<h2>
-				Feature 1
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
-			<h2>
-				Feature 2
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
-			<h2>
-				Feature 3
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="css/worth-custom.css">
+		<title>
+			The Digital Literacy Competency Calculator (DLCC) 
+		</title>
+        <style>
+            body { font-family: 'Open Sans', sans-serif; }
+            
+            section, footer { padding: 3em 0em 3em 0em; }
+            
+            .bronze
+            {
+            background-color: #b87333;
+            color: #fc6;
+            }
+            
+            .silver
+            {
+            background-color: #c3cbd0;
+            color: #444;
+            }
+            
+            .gold
+            {
+            background-color: #c5b358;
+            color: white;
+            }
+            
+            .card
+            {
+            border: 2px solid #c5b358;
+            margin-top: 1em;
+            }
+            
+            .card-block { padding: 1em; }
+            
+            p a:link, p a:hover { color: #b87333; }
+            
+            p a:active, p a:visited { color: #999; }
+            
+            .bronze p a:link, .bronze p a:hover { color: #fff; }
+            
+            .bronze p a:active, .bronze p a:visited { color: #fff; }
+        </style> 
+	</head>
+	<body>
+		<a name="top">
+		</a>
+		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">
+			</span>
+		</button>
+		<a class="navbar-brand" href="#top">
+			The Digital Literacy Competency Calculator 
+		</a>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">
+						About the DLCC
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#teach">
+						Teaching with the DLCC
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#use">
+						The DLCC in Action
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contributors">
+						Contributors
+					</a>
+				</li>
+			</ul>
 		</div>
-		<div class="col-lg-8">
-			<img class="img-fluid" src="https://dummyimage.com/800x600/666/fff&text=Screenshot" />		
-		</div>
+	</nav>
+	<section class="text-center gold">
+		<div class="container">
+			<h1 class="display-2">
+				The Digital Literacy 
+				<br />
+				Competency Calculator 
+			</h1>
+			<p class="lead">
+				Making competency mastery transparent for ourselves and our students. 
+			</p>
+			<p>
+				<strong>
+				<a href="https://github.com/ccnmtl/digital-literacy/blob/master/README.md" class="btn btn-lg btn-secondary">
+					Launch the DLCC via GitHub
+				</a>
+			</strong>
+		</p>
 	</div>
-</div>
-</section> 
-<a name="teach"></a>
-<section class="text-center silver"> 
-<div class="container">
-	<h2 class="display-4">
-		Teaching with the DLCC 
-	</h2>
-	<p class="lead">
-		Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely. 
-	</p>
-	<div class="row text-left">
-		<div class="col-lg-4">
-			<h2>
-				Step 1
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
-		</div>
-		<div class="col-lg-4">
-			<h2>
-				Step 2
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
-		</div>
-		<div class="col-lg-4">
-			<h2>
-				Step 3
-			</h2>
-			<p>
-				Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-			</p>
-		</div>
-	</div>
-</div>
-</section> 
-<a name="use"></a>
-<section class="text-center"> 
-<div class="container">
-	<h2 class="display-4">
-		The DLCC in Action
-	</h2>
-	<p class="lead">
-		Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely. 
-	</p>
+</section>
+<a name="about">
+</a>
+<section class="text-center">
+	<div class="container">
+		<h2 class="display-4">
+			About the DLCC 
+		</h2>
+		<p class="lead">
+			The Digital Literacy Competency Calculator (DLCC) is a web-based tool for representing the connection between digital literacy competencies and the teaching and learning practices that produce them. 
+			<br />
+			For more information, read our 
+		<a href="https://docs.google.com/document/d/11Em2vX-jJw_4QoP62STwVo1i5cNi81ARft9j7gOQsoA/edit?usp=sharing" target="_blank">
+			White Paper</a>. 
+		</p>
 		<div class="row">
-		<div class="col-lg-6 text-left">
-			<h2>
-				Smart Person Using It
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-			</p>
-		</div>
-		<div class="col-lg-6">
-			<img class="img-fluid" src="https://dummyimage.com/800x600/666/fff&text=Photo" />		
+			<div class="col-lg-7">
+				<img class="img-fluid" src="images/viz-explainer.jpg" alt="Screenshot of DLCC" />
+			</div>
+			<div class="col-lg-5 text-left">
+				<div class="card">
+					<div class="card-block">
+						<h2>
+							Feature A 
+						</h2>
+						<p>
+							Customize your course description. 
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-block">
+						<h2>
+							Feature B 
+						</h2>
+						<p>
+							Follow a visual hierarchy of standards-based competency mastery. 
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-block">
+						<h2>
+							Feature C 
+						</h2>
+						<p>
+							Link to a pop-out icon page featuring a description of competency, standards source, mastery level targeted in the course, activity to demonstrate mastery, and time spent on mastery. Icons are standards-based and/or customizable. 
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-</section> 
-<a name="contact"></a>
-<section class="text-center bronze"> 
-<div class="container">
-	<h2 class="display-4">
-	Contact Us
-	</h2>
-	<p class="lead">
-		Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely. 
-	</p>
-</div>
-</section> 
-
-	<footer class="footer" style="margin-bottom: 2em;"> 
+</section>
+<a name="teach">
+</a>
+<section class="text-center silver">
+	<div class="container">
+		<h2 class="display-4">
+			Teaching with the DLCC 
+		</h2>
+		<p class="lead">
+			Three steps for helping your learners see exactly what is involved in mastering a digital skill, how a specific learning experience contributes to their mastery, and what they will be able to do to show mastery. 
+			<br />
+			See our 
+		<a href="https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit?usp=sharing" target="_blank">
+			Digital Literacy Instructional Design Process
+		</a>
+		to get started. 
+		</p>
+		<div class="row text-left">
+			<div class="col-lg-4">
+				<h2>
+					Step 1: Choose 
+				</h2>
+				<p>
+					To help you get started, we have identified, from our work with Columbia faculty, three different types of digital literacy frameworks that align well with higher education instructional settings and goals. 
+				</p>
+				<p>
+				<a class="btn btn-sm btn-secondary" href="https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit#heading=h.e9c3wttg35yl" target="_blank">
+					Framework Types
+				</a>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<h2>
+					Step 2: Customize 
+				</h2>
+				<p>
+					This guided process will help you plan digital skills instruction based on the framework that is most appropriate for your instructional context. 
+				</p>
+				<p>
+				<a class="btn btn-sm btn-secondary" href="https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit#heading=h.egpugrwxsnm1" target="_blank">
+					Process Guide
+				</a>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<h2>
+					Step 3: Publish 
+				</h2>
+				<p>
+					You can create a public, web-based representation of your digital skills instruction and share with our community. 
+				</p>
+				<p>
+				<a class="btn btn-sm btn-secondary" href="https://docs.google.com/document/d/1dChIUmHyUDAgzAV5Wt3h8QZlkrqedgSnR0bsoQz2U9w/edit#heading=h.jc7p8kk42o1c" target="_blank">
+					Instruction Visualization
+				</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<a name="use">
+</a>
+<section class="text-center">
+	<div class="container">
+		<h2 class="display-4">
+			The DLCC in Action 
+		</h2>
+		<p class="lead">
+		</p>
+		<div class="row">
+			<div class="col-lg-8 text-left">
+				<h2>
+					Instructional Practices for Digital Humanities in History GR8975 
+				</h2>
+				<p>
+					Schnapp et al’s 
+				<a href="http://jeffreyschnapp.com/wp-content/uploads/2013/01/D_H_ShortGuide.pdf" target="_blank">
+					MIT Short Guide to Digital Humanities
+				</a>
+				was adapted for What is a Book in the 21st Century? Working with Historical Texts in a Digital Environment (History GR8975) at Columbia University. This graduate-level course introduces students to techniques of working in digital environments as they work collectively to create a small scale digital edition of a 16th-century manuscript. Completing the framework was a collaborative effort between the Center for Teaching and Learning and the course team. 
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-fluid" src="https://dummyimage.com/800x600/333/666&text=Photo" />
+			</div>
+		</div>
+	</div>
+</section>
+<a name="contributors">
+</a>
+<section class="text-center bronze">
+	<div class="container">
+		<h2 class="display-4">
+			Contributors 
+		</h2>
+		<p class="lead">
+			The Digital Literacy Competency Calculator is part of the 
+		<a href="http://ctl.columbia.edu/programs/seminars/digital-literacy-instructional-practices/" target="_blank">
+			Digital Literacy for Instructional Practices Program
+		</a>
+		at the Columbia University Center for Teaching and Learning and Columbia University Libraries. Contributors to this project are: Lucy Appert, Jessica Brodsky, Susan Dreher, Amy Nurnberger, and Marc Raymond. 
+		<br />
+		Please contact 
+		<a href="mailto:lucy.appert@columbia.edu">
+			Lucy Appert 
+		</a>
+		for assistance. 
+		</p>
+	</div>
+</section>
+<footer class="footer" style="margin-bottom: 2em;">
 	<div class="row">
-	
-	    <div class="col-md-4">
-	    <a href="http://www.columbia.edu/" target="_blank"><img class="img-fluid" src="images/logo-cu.png" alt="Columbia University" /></a>
-	    </div>
-	    
-	    <div class="col-md-4">
-	    <a href="http://library.columbia.edu/index.html" target="_blank"><img class="img-fluid" src="images/logo-cul.png" alt="Columbia University Libraries" /></a>
-	    </div>
-	    
-	    <div class="col-md-4">
-	    <a href="http://ctl.columbia.edu/" target="_blank"><img class="img-fluid" src="images/logo-ctl.png" alt="Columbia Center for Teaching and Learning" /></a>
-	    </div>
-	    
+		<div class="col-md-4">
+			<a href="http://www.columbia.edu/" target="_blank">
+				<img class="img-fluid" src="images/logo-cu.png" alt="Columbia University" />
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="http://library.columbia.edu/index.html" target="_blank">
+				<img class="img-fluid" src="images/logo-cul.png" alt="Columbia University Libraries" />
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="http://ctl.columbia.edu/" target="_blank">
+				<img class="img-fluid" src="images/logo-ctl.png" alt="Columbia Center for Teaching and Learning" />
+			</a>
+		</div>
 	</div>
-	</footer> 
+</footer>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
-
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
 </body>
 </html>
