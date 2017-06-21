@@ -123,7 +123,7 @@ The Digital Literacy Competency Calculator is part of the [Digital Literacy for 
 -   Amy Nurnberger
 -   Marc Raymond
 
-Please contact Lucy Appert([lucy.appert@columbia.edu](mailto:lucy.appert@columbia.edu)) for assistance.
+Please [contact us](mailto:ColumbiaCTL+DL@columbia.edu) for assistance.
 
 **License**
 -----------
