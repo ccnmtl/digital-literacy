@@ -110,7 +110,7 @@ GitHub’s documentation is available [here](https://help.github.com/).
 
     a.  Tip 1: Recommended workflow is to create a branch from the master and make edits in that branch. Once you have made your edits, create a pull request. A peer can then review changes and merge your changes with the Master.
 
-    b.  Tip 2: If you are working alone, it is still recommended that you create a pull request with your changes and then merge the changes yourself. Committing directly is NOT recommended because pull requests create a trail of edits that can be followed.
+    b.  Tip 2: If you are working alone, it is still recommended that you create a pull request with your changes and then merge the changes yourself.
 
 **Contributors**
 ----------------
